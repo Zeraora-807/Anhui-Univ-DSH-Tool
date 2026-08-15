@@ -1,0 +1,41 @@
+{
+  "name": "@deepseek-ai/dsh-tool-ahu-academic",
+  "description": "Native AHU academic tools with DSH approval, isolated local authentication, and Windows DPAPI credential storage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/core/**/*.js",
+    "lib/types/**/*.d.ts",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "koffi": "^3.1.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:^",
+    "@deepseek-ai/dsh-session": "workspace:^",
+    "@deepseek-ai/dsh-tools": "workspace:^",
+    "@deepseek-ai/dsh-user-approval": "workspace:^"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:^",
+    "@deepseek-ai/dsh-session": "workspace:^",
+    "@deepseek-ai/dsh-tools": "workspace:^",
+    "@deepseek-ai/dsh-user-approval": "workspace:^",
+    "tsx": "^4.22.4"
+  }
+}
